@@ -6,8 +6,8 @@ pipeline{
 
                        stage ("Pull the code latest from SCM") {
 
-                       steps {
-                              git branch: 'main', url: 'https://github.com/devsharma1401/project-1.git'
+                             steps {
+                                     git branch: 'main', url: 'https://github.com/devsharma1401/project-1.git'
                              }
                        }
 		 agent {
@@ -16,9 +16,9 @@ pipeline{
 
                         stage (" Build the code "){
 
-                        steps {
-                               sh 'sudo mvn clean package'
-                              }
+                              steps {
+                                     sh 'sudo mvn clean package'
+                                    }
                             }
                 }
         }
