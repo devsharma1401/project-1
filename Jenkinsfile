@@ -11,7 +11,7 @@ pipeline{
                                 }
                         stage (" Build the code "){
                                 agent {
-                                       label "slave2"
+                                       label "slave-2"
                                      }
 
                                 steps {
